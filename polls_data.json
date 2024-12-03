@@ -1,0 +1,1 @@
+[{"model": "polls.question", "pk": 1, "fields": {"question_text": "¿Cuál es el mejor jugador de la historia?", "pub_date": "2024-12-03T19:08:57Z"}}, {"model": "polls.question", "pk": 2, "fields": {"question_text": "¿Te gusta base de datos?", "pub_date": "2024-12-03T19:09:43Z"}}]
