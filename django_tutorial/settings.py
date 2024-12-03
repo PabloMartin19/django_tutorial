@@ -75,20 +75,6 @@ WSGI_APPLICATION = 'django_tutorial.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# Obtén la base del proyecto
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-# Carga las variables de entorno
-#ENVIRONMENT = os.getenv('venv', 'development')
-
-#if ENVIRONMENT == 'development':
-#    DATABASES = {
-#        'default': {
-#            'ENGINE': 'django.db.backends.sqlite3',
-#            'NAME': BASE_DIR / 'db.sqlite3',
-#        }
-#    }
-#else:  # Producción
 DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -99,7 +85,6 @@ DATABASES = {
         'PORT': '',
         }
     }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
