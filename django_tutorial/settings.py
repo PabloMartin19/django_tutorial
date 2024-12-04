@@ -74,17 +74,23 @@ WSGI_APPLICATION = 'django_tutorial.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
 DATABASES = {
-        'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django',
-        'USER': 'pablodjango',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',  # Utiliza el backend SQLite
+        'NAME': BASE_DIR / 'db.sqlite3',         # El archivo de base de datos estará en el directorio raíz
     }
+}
+
+#DATABASES = {
+#        'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'django',
+#        'USER': 'pablodjango',
+#        'PASSWORD': 'password',
+#        'HOST': 'localhost',
+#        'PORT': '',
+#        }
+#    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
