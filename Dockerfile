@@ -2,7 +2,7 @@ FROM python:3
 WORKDIR /usr/src/app
 RUN pip install django mysqlclient 
 ADD django_tutorial/ /usr/src/app
-ADD django_polls.s /opt
+ADD django_polls.sh /opt
 RUN mkdir static && chmod +x /opt/django_polls.sh
 ENV ALLOWED_HOSTS=*
 ENV HOST=mariadb
